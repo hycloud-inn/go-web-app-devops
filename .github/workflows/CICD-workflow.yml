@@ -18,7 +18,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ['self-hosted', 'Linux', 'X64']
 
     steps:
     - name: Checkout repository
@@ -38,7 +38,7 @@ jobs:
       run: go test ./...
   
   code-quality:
-    runs-on: ubuntu-latest
+    runs-on: ['self-hosted', 'Linux', 'X64']
 
     steps:
     - name: Checkout repository
@@ -51,7 +51,7 @@ jobs:
   
   push_to_registry:
     name: Push Docker image to Docker Hub
-    runs-on: ubuntu-latest
+    runs-on: ['self-hosted', 'Linux', 'X64']
     needs: build
 
     steps:
@@ -87,7 +87,7 @@ jobs:
 
   Sonar-analysis:
     name: Sonarqube and analyze
-    runs-on: ubuntu-latest
+    runs-on: ['self-hosted', 'Linux', 'X64']
     
     steps:
       - uses: actions/checkout@v4
