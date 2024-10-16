@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: <docker-user-name>/go-web-app
+        image: docker pull hycloud16/go-web-app-devops:11366752673
         ports:
         - containerPort: 8080
