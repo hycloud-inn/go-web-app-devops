@@ -38,7 +38,7 @@ jobs:
       run: go test ./...
   
   code-quality:
-   runs-on: ubunutu-latest
+    runs-on: ubunutu-latest
 
     steps:
     - name: Checkout repository
