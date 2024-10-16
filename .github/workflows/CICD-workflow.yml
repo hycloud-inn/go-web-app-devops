@@ -18,7 +18,7 @@ on:
 jobs:
 
   build:
-    runs-on: runs-on: ubunutu-latest
+    runs-on: ubunutu-latest
 
     steps:
     - name: Checkout repository
