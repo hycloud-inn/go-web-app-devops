@@ -75,7 +75,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        images: {{ secrets.DOCKERHUB_USERNAME }}/go-web-app-devops
+        images: hycloud16/go-web-app-devops
         tags: |
           type=sha
 
