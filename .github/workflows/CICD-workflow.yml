@@ -76,7 +76,7 @@ jobs:
     - name: Scan Docker image with Trivy
       uses: aquasecurity/trivy-action@0.20.0
       with:
-        image-ref: 'docker.io/${{ hycloud16 }}/go-web-app-devops:${{ github.run_id }}'
+        image-ref: 'docker.io/hycloud16/go-web-app-devops:${{ github.run_id }}'
         format: 'sarif'
         output: 'trivy-results.sarif'
 
