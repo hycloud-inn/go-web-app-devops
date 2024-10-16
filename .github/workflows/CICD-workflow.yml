@@ -75,9 +75,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        images: hycloud16/go-web-app-devops
-        tags: |
-          type=sha
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-web-app-devops:${{github.run_id}}
 
   Sonar-analysis:
     name: Sonarqube and analyze
